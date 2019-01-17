@@ -21,7 +21,7 @@
    copyright and patent licenses thereto.
 
    If you have not already done so, please complete and sign, then scan and
-   email a pdf file of this Agreement to prestofoundation@gmail.com.
+   email a pdf file of this Agreement to cla@prestosql.io.
    Please read this document carefully before signing and keep a copy for
    your records.
 
