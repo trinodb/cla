@@ -28,3 +28,5 @@ The Individual CLA is not tied to any employer you may have, so it is recommende
 to use one's personal email address in the contact details, rather than an
 @work address. Your Full name will be public. The email address and other contact details are
 not published.
+
+[![Build Status](https://travis-ci.com/prestosql/cla.svg?branch=master)](https://travis-ci.com/prestosql/cla)
