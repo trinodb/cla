@@ -1,7 +1,7 @@
 # Presto Software Foundation Contributor License Agreements
 
 The Presto Software Foundation requires that all contributors of ideas,
-code, or documentation to Presto complete, sign, and submit via [email](mailto:cla@prestosql.io) an
+code, or documentation to Presto complete, sign, and submit via [email](mailto:cla@trino.io) an
 [Individual Contributor License Agreement](https://github.com/prestosql/cla/raw/master/Presto%20Foundation%20Individual%20CLA.pdf).
 
 Our agreement reproduces without alteration the Apache Software Foundation
