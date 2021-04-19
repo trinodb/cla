@@ -1,4 +1,4 @@
-                       PRESTO SOFTWARE FOUNDATION
+                       TRINO SOFTWARE FOUNDATION
           CORPORATE CONTRIBUTOR LICENSE AGREEMENT (“AGREEMENT”)
 
    This Agreement reproduces without alteration The Apache Software
@@ -6,7 +6,7 @@
    http://www.apache.org/licenses/ (v r190612) except for changing
    appropriate references
 
-   Thank you for your interest in the Presto Software Foundation (the
+   Thank you for your interest in the Trino Software Foundation (the
    "Foundation"). In order to clarify the intellectual property license
    granted with Contributions from any person or entity, the Foundation
    must have a Contributor License Agreement (CLA) on file that has been
@@ -21,7 +21,7 @@
    copyright and patent licenses thereto.
 
    If you have not already done so, please complete and sign, then scan and
-   email a pdf file of this Agreement to cla@prestosql.io.
+   email a pdf file of this Agreement to cla@trino.io.
    Please read this document carefully before signing and keep a copy for
    your records.
 

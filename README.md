@@ -1,21 +1,21 @@
-# Presto Software Foundation Contributor License Agreements
+# Trino Software Foundation Contributor License Agreements
 
-The Presto Software Foundation requires that all contributors of ideas,
-code, or documentation to Presto complete, sign, and submit via [email](mailto:cla@trino.io) an
-[Individual Contributor License Agreement](https://github.com/prestosql/cla/raw/master/Presto%20Foundation%20Individual%20CLA.pdf).
+The Trino Software Foundation requires that all contributors of ideas,
+code, or documentation to Trino complete, sign, and submit via [email](mailto:cla@trino.io) an
+[Individual Contributor License Agreement](https://github.com/trinodb/cla/raw/master/Trino%20Foundation%20Individual%20CLA.pdf).
 
 Our agreement reproduces without alteration the Apache Software Foundation
 Individual and Corporate Contributor License agreements for changing appropriate
 references.
 
 The purpose of this agreement is to clearly define the terms under which
-intellectual property has been contributed to the Presto Software Foundation
+intellectual property has been contributed to the Trino Software Foundation
  and thereby allow us to defend the project should there be a legal dispute
  regarding the software at some future time. A signed CLA is required to be
- on file before contributions can be accepted into Presto.
+ on file before contributions can be accepted into Trino.
 
-A corporation that has assigned employees to work on Presto should sign a 
-[Corporate CLA](https://raw.githubusercontent.com/prestosql/cla/master/Presto%20Foundation%20Corporate%20CLA.txt). 
+A corporation that has assigned employees to work on Trino should sign a 
+[Corporate CLA](https://raw.githubusercontent.com/trinodb/cla/master/Trino%20Foundation%20Corporate%20CLA.txt). 
 Note that a Corporate CLA does not remove the need for every 
 developer to sign their own Individual CLA, which covers both contributions 
 which are owned and those that are not owned by the corporation signing the 
