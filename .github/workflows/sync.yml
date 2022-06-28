@@ -1,0 +1,45 @@
+name: Incremental data sync with CLA response Google Sheet
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      GOOGLE_TOKEN: ${{ secrets.GOOGLE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+      - name: Prepare credentials
+        run: |
+          echo $GOOGLE_TOKEN | base64 --decode > service-account.json
+      - name: Sync with Google Sheets
+        run: |
+          .github/bin/fetch_new_contributors.py --output new_contributors
+      - name: Add new contributors
+        run: |
+          jq -n '[ inputs ] | add' contributors new_contributors > tmp_contributors
+          mv -f tmp_contributors contributors
+      - name: Commit report
+        run: |
+          git config --global user.name 'CLA submission workflow'
+          git config --global user.email 'MiguelWeezardo@users.noreply.github.com'
+          if ( git diff --quiet --exit-code contributors )
+          then
+            echo "No changes in contributors detected"
+          else
+            echo "Changes in contributors detected, commiting"
+            git add contributors
+            git commit -m "Automated CLA entry"
+            git push
+          fi
+      - name: Summon cla-bot on all PRs from new contributors
+        run: |
+          .github/bin/summon_cla_bot_for_all_prs.py --verbose --contributors new_contributors
+          rm -f new_contributors
