@@ -30,3 +30,9 @@ to use one's personal email address in the contact details, rather than an
 not published.
 
 [![Build Status](https://travis-ci.com/trinodb/cla.svg?branch=master)](https://travis-ci.com/trinodb/cla)
+
+## Process
+After submission of the signed CLA, a manual process must be run to add the github handle into the
+[contributors](https://github.com/trinodb/cla/blob/master/contributors) file.  
+Once that is done, the `cla-bot` will pass the checks on any pull requests submitted from that github handle.
+If the bot does not automatically check, you may manually trigger a check with commenting `cla-bot check` on the PR.  
